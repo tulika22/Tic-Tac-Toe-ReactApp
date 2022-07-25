@@ -2,7 +2,7 @@
     display : flex;
     flex-direction: column;
     width:100%;
-    height: 100vh;;
+    height: 100vh;
     
 }
 
@@ -16,13 +16,12 @@
 .header{
     text-align: center;
     width:100%;
-    background-color: peachpuff;
-    padding: 5px;
+    background-color: rgb(33, 37, 41);
+    padding: 3px;
     align-items: center;
     box-sizing: border-box;
-    line-height:10%;
+    line-height: 5%;
     height: auto;
-    border: 3px solid purple;
     
 }
 
@@ -30,13 +29,14 @@ h1{
     display:inline-block;
     height:auto;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-    color: black;
+    /*text-shadow: -2px -2px 0 #2155CD, 2px -2px 0 #2155CD, -2px 2px 0 #2155CD, 2px 2px 0 #2155CD;*/
+    font-size: 40px;
+    color: #E8F9FD;
     padding-bottom: 2px;
 }
 
 .board{
-    color: purple;
+    color: #5534A5;
     font-size: 50px;
     border-spacing: 15px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -56,10 +56,10 @@ h1{
 
 
 table td{
-    border : 3px solid black;
+    border : 3px solid #646FD4;
     width : 100px;
     height : 100px;
-    background-color: lavender;
+    background-color: #DBDFFD;
     
     
 }
@@ -67,6 +67,7 @@ table td{
 h2{
     font-family:Georgia, 'Times New Roman', Times, serif ;
     font-size: 25px;
+    display: inline-flexbox;
     color: whitesmoke;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     
@@ -76,8 +77,8 @@ button{
     align-self: center;
     font-size: 30px;
     font-family: cursive;
-    background-color: lavenderblush;
-    color: purple;
+    background-color: #DBDFFD;
+    color: #371B58;
     width: fit-content; 
     border: 2px solid black;  
 }
