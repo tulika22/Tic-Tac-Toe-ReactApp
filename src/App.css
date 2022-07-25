@@ -1,5 +1,17 @@
 .App {
   text-align: center;
+  /*background-image: url("https://wallpapercave.com/wp/wp4448599.jpg");*/
+  background-image: url("https://wallpapercave.com/wp/wp4448599.jpg");
+  /*https://wallpapercave.com/wp/wp5089612.jpg");
+  /*https://wallpapercave.com/wp/wp1951645.jpg");
+  /*https://wallpapercave.com/wp/wp1866929.jpg");
+  /*https://wallpapercave.com/wp/wp4443749.jpg");*/
+
+  position: fixed;
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+  background-position: cover;
 }
 
 .App-logo {
