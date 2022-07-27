@@ -88,6 +88,8 @@ button{
     color: #371B58;
     width: fit-content; 
     border: 2px solid black;  
+    border-radius: 1rem;
+    padding: 0.5rem;
 }
 
 h3{

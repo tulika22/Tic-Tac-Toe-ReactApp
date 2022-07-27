@@ -1,6 +1,103 @@
 .background{
-    background-color: hwb(0 56% 41%);
-    opacity: 0.5;
-    height:100%;
-    width: 100%;
+    background-color: transparent;
+    background-color: rgba(200, 200, 200,0.5);
+    /*hwb(0 56% 41%);*/
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 2rem;
+    background-color: #f0f8ff;
+    background-image: url("https://c.tenor.com/Fc8c39wyPOUAAAAi/party-time-jolly.gif");
+    /*https://i.pinimg.com/originals/11/7f/25/117f25c9f178425387fe37c47d8b32a8.gif");*/
+  
+    display: flex;
+    background-size: cover;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    
+}
+
+.box .body{
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.heading{
+    flex:50%;
+   
+    align-content:space-around;
+    
+    height: fit-content;
+    color: rgb(17, 209, 231);
+   
+    
+}
+
+.heading h1{
+    margin-top: 5.5rem;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: rgb(17, 209, 231);
+    height: auto;
+}
+
+.closeX{
+    display: flex;
+    justify-content: right;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.closeX button{
+    display: flex;
+    top:0;
+    right:0;
+    justify-content: right;
+    background-color: red;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0.25rem;
+    border-radius: 0;
+    
+    
+    
+}
+
+.body h2{
+    font-size: 2rem;
+    color: #000;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+
+}
+
+.foot{
+    height:5rem;
+    
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    
+}
+
+.foot button{
+    font-size: 1.5rem;
+    height:3rem;
+    margin: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
 }

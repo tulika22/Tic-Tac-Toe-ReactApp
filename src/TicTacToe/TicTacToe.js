@@ -7,6 +7,7 @@ const TicTacToe = () => {
     const [cells,setCells] = useState(Array(9).fill(''));
     const [winner,setWinner] = useState();
     const [chance,setChance] = useState(0);
+    const [winMod, setWinMod] = useState(false);
 
     const checkForWinner = ({squares}) => {
         let combos = {
@@ -40,6 +41,7 @@ const TicTacToe = () => {
                     && squares[pattern[1]] === squares[pattern[2]])
                     {
                         setWinner(squares[pattern[0]]);
+                        setWinMod(true);
                         return;
                     }
             });
@@ -51,6 +53,7 @@ const TicTacToe = () => {
         setCells(Array(9).fill(''));
         setTurn('X');
         setChance(0);
+        setWinMod(false);
     }
 
     const handleClick = (num) =>{
@@ -133,8 +136,8 @@ const TicTacToe = () => {
       <div className='win'>
         {winner && (
         <>
-            
-             <h3>{winner} is the Winner! </h3> 
+            {winMod && <Result closeTab={setWinMod} restart={handleRestart} winner={winner}/>}
+             
             <button onClick={() => handleRestart()}> Play Again</button>
         </>
 
