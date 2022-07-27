@@ -151,6 +151,9 @@ const TicTacToe = () => {
       </div>
       
       </div>
+      <div className='footer'>
+            <h4>© powered by Tulika Tiwari - ®</h4>
+      </div>
     </div>
   )
 }
