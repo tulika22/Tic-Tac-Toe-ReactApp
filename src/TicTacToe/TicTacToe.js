@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './TicTacToe.css'
+import Result from './Result';
 
 const TicTacToe = () => {
     const [turn,setTurn] = useState('X');
@@ -43,9 +44,6 @@ const TicTacToe = () => {
                     }
             });
         }
-
-       
-        
     };
 
     const handleRestart = () =>{
@@ -66,7 +64,7 @@ const TicTacToe = () => {
 
         if(chance == 9 && winner == null)
         {
-            setWinner('No One');
+            //setWinner('No One');
             alert('Match Draw! Play again!');
             return;
         }
@@ -93,11 +91,7 @@ const TicTacToe = () => {
         checkForWinner({squares});
 
         console.log({chance});
-        if({chance} == 9 && {winner} == null)
-        {
-            setWinner('No One');
-            return;
-        }
+        
 
     }
     
@@ -139,10 +133,17 @@ const TicTacToe = () => {
       <div className='win'>
         {winner && (
         <>
+            
              <h3>{winner} is the Winner! </h3> 
             <button onClick={() => handleRestart()}> Play Again</button>
         </>
 
+      )}
+      {chance == 9 && !winner && (
+      <>
+            <h3>There is no Winner! </h3> 
+            <button onClick={() => handleRestart()}> Play Again</button>
+      </>
       )}
       </div>
       
